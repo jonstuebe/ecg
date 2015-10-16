@@ -1,0 +1,17 @@
+
+
+.content-area {
+	ol, ul, p {
+		color: $color-dark-grey;
+		font-size: 14px;
+		margin-bottom: 20px;
+	}
+
+	ol, ul {
+		padding-left: 0px;
+
+		li {
+			list-style-position: inside;
+		}
+	}
+}

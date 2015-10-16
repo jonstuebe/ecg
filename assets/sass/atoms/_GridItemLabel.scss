@@ -1,0 +1,51 @@
+
+
+.grid-item {
+	&:hover {
+		.grid-item-label {
+			opacity: 1;
+		}
+	}
+}
+
+.grid-item-label {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity 250ms linear;
+	background-color: $color-green;
+
+	&.has-centered {
+		background-color: rgba(#000, .5);
+	}
+}
+
+.grid-item-label__children {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 20px;
+
+	p {
+		margin: 0;
+		text-transform: uppercase;
+		color: #fff;
+	}
+}
+
+.grid-item-label__title {
+	color: #fff;
+	line-height: 1.3;
+	margin: 0;
+}
+
+.grid-item-label__title--centered {
+	text-align: center;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+
+}

@@ -1,0 +1,28 @@
+
+
+.heading {
+	font-weight: 200;
+	margin: 0;
+	text-transform: uppercase;
+	color: $color-dark-grey;
+}
+
+h1, .heading--lg {
+	font-size: 30px;
+	margin-bottom: 25px;
+}
+
+h2, .heading--md {
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+
+h3, .heading--sm {
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+h4, .heading--xs {
+	font-size: 16px;
+	margin-bottom: 10px;
+}

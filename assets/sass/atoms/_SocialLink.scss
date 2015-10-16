@@ -1,0 +1,30 @@
+
+
+.social-link {
+	text-decoration: none;
+	text-indent: -9999em;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.social-link--facebook {
+	width: 26px;
+	height: 25px;
+	background: url(/assets/images/icons/facebook.png) no-repeat;
+	background-size: 26px 25px;
+
+	@include hidpi {
+		background-image: url(/assets/images/icons/facebook@2x.png);
+	}
+}
+
+.social-link--email {
+	width: 29px;
+	height: 21px;
+	background: url(/assets/images/icons/email.png) no-repeat;
+	background-size: 29px 21px;
+
+	@include hidpi {
+		background-image: url(/assets/images/icons/email@2x.png);
+	}
+}

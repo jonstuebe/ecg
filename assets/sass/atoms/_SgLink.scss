@@ -1,0 +1,28 @@
+
+
+.sg-link {
+
+	float: left;
+	list-style-type: none;
+
+	a {
+		float: left;
+		color: #fff;
+		text-decoration: none;
+		height: 30px;
+		line-height: 30px;
+		padding: 0 15px;
+		font-weight: bold;
+		@include font-smooth;
+
+		&:hover {
+			background-color: lighten(#000, 15%);
+		}
+	}
+
+	&.is-active {
+		a {
+
+		}
+	}
+}

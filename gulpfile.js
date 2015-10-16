@@ -12,10 +12,11 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     browserSync = require('browser-sync').create(),
     reload = browserSync.reload,
-    plumber = require('gulp-plumber');
+    plumber = require('gulp-plumber'),
+    path = require('path');
 
 var paths = {
-    scripts: './assets/js/src/**/*.js',
+    scripts: './assets/js/**/*.js',
     styles: './assets/sass/**/*.scss',
     output: {
         scripts: './assets/js',
@@ -23,15 +24,18 @@ var paths = {
     }
 }
 
+var includePaths = neat.includePaths;
+includePaths.push(path.resolve(__dirname, 'bower_components/foundation/scss'));
+
 gulp.task('styles.prod', function(){
 
 	gulp.src(paths.styles)
     	.pipe(changed(paths.output.styles, { extension: '.css' }))
     	.pipe(sass({
-    		includePaths: neat.includePaths
+    		includePaths: includePaths
         }))
         .pipe(autoprefixer({
-            browsers: ['last 3 versions']
+            browsers: ['last 5 versions']
         }))
         .pipe(minifyCSS({
         	keepSpecialComments: 0
@@ -47,16 +51,16 @@ gulp.task('styles.prod', function(){
 gulp.task('styles', function()
 {
     gulp.src(paths.styles)
-        .pipe(changed(paths.output.styles, { extension: '.css' }))
+        // .pipe(changed(paths.output.styles, { extension: '.css' }))
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(sass({
             includePaths: neat.includePaths,
             sourceMap: true
         }))
-        // .pipe(autoprefixer({
-        //     browsers: ['last 3 versions']
-        // }))
+        .pipe(autoprefixer({
+            browsers: ['last 4 versions']
+        }))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(paths.output.styles))
         .pipe(browserSync.stream())

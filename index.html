@@ -1,28 +1,150 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--><html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-        <meta property="og:site_name" content=""/>
-        <meta property="og:type" content="website"/>
-        <meta property="og:image" content=""/>
+<!doctype html>
+<html class="no-js" lang="en">
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="stylesheet" href="assets/css/screen.css">
-        <script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
-    </head>
-    <body>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Foundation</title>
+	<link rel="stylesheet" href="assets/css/screen.css" />
+	<script src="bower_components/modernizr/modernizr.js"></script>
+</head>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
-        <script src="assets/js/plugins.js"></script>
-        <script src="assets/js/main.js"></script>
+<body>
 
-    </body>
+	<div class="off-canvas-wrap" data-offcanvas>
+		<div class="inner-wrap">
+
+			<!-- Off Canvas Menu -->
+			<aside class="left-off-canvas-menu">
+				<!-- whatever you want goes here -->
+				<ul>
+					<ul>
+						<li class="mobile-nav-item"><a href="#">Home</a></li>
+						<li class="mobile-nav-item"><a href="#">Services</a></li>
+						<li class="mobile-nav-item"><a href="#">Markets</a></li>
+						<li class="mobile-nav-item"><a href="#">Team</a></li>
+						<li class="mobile-nav-item"><a href="#">Approach</a></li>
+						<li class="mobile-nav-item"><a href="#">About Us</a></li>
+						<li class="mobile-nav-item"><a href="#">Contact Us</a></li>
+					</ul>
+				</ul>
+			</aside>
+
+			<div class="nav-bar">
+				<div class="row">				
+					<div class="columns small-12">
+						
+						<div class="row">
+							<div class="columns small-12 large-3">
+								
+								<h1 class="logo">
+									<a href="#">ECG | Excellere Capital Group</a>
+								</h1>
+				
+								<div class="hide-for-large-up">
+									<a class="left-off-canvas-toggle" href="#">Menu</a>
+								</div>
+							</div>
+							<div class="columns large-9 show-for-large-up">
+								
+								<div class="nav-items">
+									<ul>
+										<li class="nav-item"><a href="#">Home</a></li>
+										<li class="nav-item"><a href="#">Services</a></li>
+										<li class="nav-item"><a href="#">Markets</a></li>
+										<li class="nav-item"><a href="#">Team</a></li>
+										<li class="nav-item"><a href="#">Approach</a></li>
+										<li class="nav-item"><a href="#">About Us</a></li>
+										<li class="nav-item"><a href="#">Contact Us</a></li>
+									</ul>
+								</div>
+				
+							</div>
+						</div>
+				
+					</div>
+				</div>
+			</div> <!-- end of .nav-bar -->
+			<div class="content-area">
+				<div class="row">
+					<div class="columns small-12">
+						
+						<h2 class="heading heading--md">Contact Us</h2>
+
+						<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+						<div class="row">
+							<div class="columns small-12 medium-6">
+								<input type="text" placeholder="Name" class="text-input" />
+							</div>
+							<div class="columns small-12 medium-6">
+								<input type="text" placeholder="Email" class="text-input" />
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="columns small-12 medium-6">
+								<div class="select-dropdown">
+									<select>
+										<option selected value="">Purpose</option>
+										<option value="1">One</option>
+										<option value="2">Two</option>
+										<option value="3">Three</option>
+									</select>
+								</div>
+							</div>
+							
+							<div class="columns small-12 medium-6">
+								<input type="text" placeholder="Email" class="text-input" />
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="columns small-12">
+								<input type="text" placeholder="Subject" class="text-input" />
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="columns small-12">
+								<textarea class="text-area" placeholder="Message"></textarea>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="columns small-12">
+								<input type="submit" class="submit-input" value="Submit" />
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div> <!-- end of .content-area -->
+
+			<div class="footer">
+				
+				<div class="row">
+					<div class="columns small-12 medium-8">
+						<p>&copy; 2015 ECG</p>
+					</div>
+					<div class="columns small-12 medium-4">
+						<a href="#">About Us</a>
+						<a href="#">Privacy</a>
+						<a href="#">Contact</a>
+					</div>
+				</div>
+
+			</div> <!-- end of .footer -->
+
+			<!-- close the off-canvas menu -->
+			<a class="exit-off-canvas"></a>
+
+		</div>
+	</div>    
+
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/foundation/js/foundation.min.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+
 </html>
