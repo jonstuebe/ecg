@@ -2,5 +2,58 @@
 
 	background-color: $color-green;
 	padding: 40px 0;
+	$color-almost-white: darken(#fff, 5%);
+	line-height: 1;
+
+	ol, ul, p {
+		margin: 0;
+	}
+
+	.footer__copy, .footer__nav-item {
+		font-family: 'helvetica', arial, sans-serif;
+		font-size: 15px;
+		color: $color-almost-white;
+		@include font-smooth;
+		line-height: 25px;
+	}
+
+	.footer__nav-items {
+		float: left;
+	}
+
+	ul {
+		
+		list-style-type: none;
+
+		li {
+			display: inline;
+
+			&:after {
+				content: "/";
+				display: inline-block;
+				margin: 0 3px;
+				color: $color-almost-white;
+			}
+
+			&:last-child {
+				&:after {
+					display: none;
+				}
+			}
+		}
+
+	}
+
+	.footer__nav-item {
+		text-decoration: none;
+	}
+
+	.social-link--facebook {
+		margin-left: 10px;
+	}
+
+	.social-link--email {
+		margin-left: 10px;
+	}
 
 }

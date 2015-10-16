@@ -1,0 +1,17 @@
+
+.left-off-canvas-menu {
+	background-color: $color-light-grey;
+	padding-top: 20px;
+}
+
+.mobile-nav-item {
+	list-style-type: none;
+	
+	a {
+		font-size: 15px;
+		text-decoration: none;
+		font-weight: bold;
+		font-family: $default-font-family;
+		color: $color-dark-grey;
+	}
+}

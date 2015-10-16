@@ -1,0 +1,25 @@
+.grid-items {
+	background-color: #fff;
+	@include block-grid(1, 10px);
+
+	@include breakpoint($small-up) {
+		@include block-grid(2);
+	}
+
+	@include breakpoint($medium-up) {
+		@include block-grid(4);
+	}
+
+	&.grid-items--collapse {
+		$align-block-grid-to-grid: true;
+		@include block-grid(1, 3px);
+
+		@include breakpoint($small-up) {
+			@include block-grid(2, 3px);
+		}
+
+		@include breakpoint($medium-up) {
+			@include block-grid(4, 3px);
+		}
+	}
+}

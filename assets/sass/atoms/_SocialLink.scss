@@ -23,6 +23,8 @@
 	height: 21px;
 	background: url(/assets/images/icons/email.png) no-repeat;
 	background-size: 29px 21px;
+	position: relative;
+	top: 2px;
 
 	@include hidpi {
 		background-image: url(/assets/images/icons/email@2x.png);

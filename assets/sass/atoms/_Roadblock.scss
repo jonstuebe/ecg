@@ -1,0 +1,27 @@
+.roadblock {
+	position: relative;
+
+	&:before {
+		content: "";
+		display: block;
+		width: 100%;
+		padding-top: (500 / 1500) * 100%;
+
+		@include breakpoint($medium-up) {
+			padding-top: (310 / 1500) * 100%;
+		}
+
+		@include breakpoint($large-up) {
+			padding-top: (210 / 1500) * 100%;
+		}
+	}
+
+	.roadblock__inner {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-size: cover;
+	}
+}

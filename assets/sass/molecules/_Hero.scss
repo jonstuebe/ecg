@@ -1,0 +1,101 @@
+.hero {
+	position: relative;
+	overflow: hidden;
+
+	&:before {
+		content: "";
+		display: block;
+		width: 100%;
+		padding-top: (950 / 1500) * 100%;
+
+		@include breakpoint($medium-up) {
+			padding-top: (700 / 1500) * 100%;
+		}
+
+		@include breakpoint($large-up) {
+			padding-top: (400 / 1500) * 100%;
+		}
+	}
+
+	.hero__image {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+	}
+
+	.nav-bar {
+		position: relative;
+		top: 40px;
+	}
+
+	&.hero--extended {
+
+		&:before {
+			padding-top: (1250 / 1500) * 100%;
+
+			@include breakpoint($medium-up) {
+				padding-top: (820 / 1500) * 100%;
+			}
+
+			@include breakpoint($large-up) {
+				padding-top: (820 / 1500) * 100%;
+			}
+		}
+
+		.nav-bar {
+			background-color: transparent;
+
+			.nav-item {
+				a {
+					color: #fff;
+				}
+			}
+		}
+
+		.hero__content {
+			text-align: center;
+			position: absolute;
+			top: 55%;
+			width: 100%;
+
+			@include breakpoint($medium-up) {
+				top: 55%;
+			}
+
+			@include breakpoint($large-up) {
+				top: 50%;
+				transform: translateY(-50%);
+			}
+		}
+
+		.hero__caption {
+			text-transform: uppercase;
+			font-size: 15px;
+			color: #fff;
+			font-weight: 300;
+			letter-spacing: 4px;
+			margin-bottom: 20px;
+
+			@include breakpoint($small-up) {
+				font-size: 16px;
+			}
+
+			@include breakpoint($medium-up) {
+				letter-spacing: 10px;
+				font-size: 24px;
+				margin-bottom: 30px;
+			}
+
+			@include breakpoint($large-up) {
+				font-size: 40px;
+				margin-bottom: 80px;
+			}
+		}
+
+	}
+}

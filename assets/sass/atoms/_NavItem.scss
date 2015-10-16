@@ -10,6 +10,11 @@
 		color: $color-dark-grey;
 		margin: 0 25px;
 		line-height: 105px;
+		@include font-smooth;
+
+		&:hover {
+			color: lighten($color-dark-grey, 10%);	
+		}
 	}
 
 	&.is-active {

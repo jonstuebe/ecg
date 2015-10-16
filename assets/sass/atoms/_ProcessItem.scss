@@ -1,0 +1,78 @@
+.process-item {
+
+	display: inline-block;
+	// margin: 0 20px 30px;
+	margin-bottom: 30px;
+	box-sizing: border-box;
+	width: 100%;
+
+	@include breakpoint("#{$screen} and (min-width:#{400px})") {
+		// margin: 0 50px 30px;
+		width: 49%;
+	}
+
+
+	@include breakpoint("#{$screen} and (min-width:#{800px})"){
+		width: 24%;
+	}
+		
+	.process-item__icon {
+		position: relative;
+		height: 99px;
+		left: 50%;
+		transform: translateX(-50%);
+		margin-bottom: 50px;
+	}
+
+	.process-item__icon--cone {
+		width: 96px;
+		background: url(../images/icons/cone.png) no-repeat;
+		background-position: 0 center;
+
+		@include hidpi {
+			background-image: url(../images/icons/cone@2x.png);
+			background-size: 96px 93px;
+		}
+	}
+
+	.process-item__icon--globe {
+		width: 98px;
+		background: url(../images/icons/globe.png) no-repeat;
+		background-position: 0 center;
+
+		@include hidpi {
+			background-image: url(../images/icons/globe@2x.png);
+			background-size: 98px 99px;
+		}
+	}
+
+	.process-item__icon--book {
+		width: 81px;
+		background: url(../images/icons/book.png) no-repeat;
+		background-position: 0 center;
+
+		@include hidpi {
+			background-image: url(../images/icons/book@2x.png);
+			background-size: 81px 85px;
+		}
+	}
+
+	.process-item__icon--partnership {
+		width: 113px;
+		background: url(../images/icons/partnership.png) no-repeat;
+		background-position: 0 center;
+
+		@include hidpi {
+			background-image: url(../images/icons/partnership@2x.png);
+			background-size: 113px 70px;
+		}
+	}
+
+	.process-item__caption {
+		text-align: center;
+		color: #fff;
+		font-weight: normal;
+		font-size: 20px;
+		@include font-smooth;
+	}
+}

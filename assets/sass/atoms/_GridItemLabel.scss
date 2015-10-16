@@ -1,5 +1,3 @@
-
-
 .grid-item {
 	&:hover {
 		.grid-item-label {
@@ -24,12 +22,13 @@
 }
 
 .grid-item-label__children {
+
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	padding: 20px;
 
-	p {
+	p, .content-area & p {
 		margin: 0;
 		text-transform: uppercase;
 		color: #fff;
@@ -44,6 +43,8 @@
 
 .grid-item-label__title--centered {
 	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 10px;
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);

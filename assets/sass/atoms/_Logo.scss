@@ -4,16 +4,28 @@
 	margin: 0;
 
 	a {
-		width: 380px;
-		height: 105px;
+		width: 228px;
+		height: 63px;
 		text-indent: -9999em;
 		display: block;
 		overflow: hidden;
 		background: url(/assets/images/logo.png) no-repeat;
+		background-size: 228px 63px;
 		text-decoration: none;
 
 		@include hidpi {
 			background-image: url(/assets/images/logo@2x.png);
+		}
+
+		@include breakpoint($small-up) {
+			width: 290px;
+			height: 80px;
+			background-size: 290px 80px;
+		}
+
+		@include breakpoint($medium-up) {
+			width: 380px;
+			height: 105px;
 			background-size: 380px 105px;
 		}
 	}
