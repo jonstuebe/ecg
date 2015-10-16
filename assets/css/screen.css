@@ -3725,7 +3725,7 @@ html, body {
     text-rendering: optimizeLegibility;
     line-height: 25px; }
   .footer .footer__nav-items {
-    float: left; }
+    float: right; }
   .footer ul {
     list-style-type: none; }
     .footer ul li {
@@ -3739,6 +3739,9 @@ html, body {
         display: none; }
   .footer .footer__nav-item {
     text-decoration: none; }
+  .footer .social-links {
+    float: right;
+    margin-left: 20px; }
   .footer .social-link--facebook {
     margin-left: 10px; }
   .footer .social-link--email {
@@ -3925,10 +3928,11 @@ html, body {
     .nav-bar .left-off-canvas-toggle:after {
       top: auto;
       bottom: 0; }
-  .nav-bar .small-12 .small-3 {
-    width: 50%; }
-  .nav-bar .small-12 .small-9 {
-    width: 50%; }
+  @media only screen and (min-width: 641px) and (max-width: 1023px) {
+    .nav-bar .small-12 .small-3 {
+      width: 50%; }
+    .nav-bar .small-12 .small-9 {
+      width: 50%; } }
 
 .left-off-canvas-menu {
   background-color: #D7D8D9;

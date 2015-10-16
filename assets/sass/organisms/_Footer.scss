@@ -18,7 +18,7 @@
 	}
 
 	.footer__nav-items {
-		float: left;
+		float: right;
 	}
 
 	ul {
@@ -46,6 +46,11 @@
 
 	.footer__nav-item {
 		text-decoration: none;
+	}
+
+	.social-links {
+		float: right;
+		margin-left: 20px;
 	}
 
 	.social-link--facebook {

@@ -60,12 +60,16 @@
 
 	.small-12 {
 
-		.small-3 {
-			width: 50%;
-		}
+		@include breakpoint($medium-only) {
+			
+			.small-3 {
+				width: 50%;
+			}
 
-		.small-9 {
-			width: 50%;
+			.small-9 {
+				width: 50%;
+			}
+			
 		}
 
 	}
